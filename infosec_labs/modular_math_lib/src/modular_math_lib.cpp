@@ -13,7 +13,7 @@ int modular_add(int x, int y, int mod)
 
 int modular_sub(int x, int y, int mod)
 {
-	return (x % mod - y % mod) % mod;
+	return (x % mod + (mod - y % mod)) % mod;
 }
 
 int modular_mul(int x, int y, int mod)
