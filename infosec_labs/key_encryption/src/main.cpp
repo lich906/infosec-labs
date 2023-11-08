@@ -8,7 +8,7 @@ int main(int argc, char** argv)
 	prog.add_argument("-m", "--modulus")
 		.scan<'i', int>()
 		.help("set value of modulus being used for encryption(decryption)")
-		.default_value(int(512));
+		.default_value(int(256));
 	prog.add_argument("-d", "--decrypt")
 		.help("perform decryption instead of encryption")
 		.default_value(false)
