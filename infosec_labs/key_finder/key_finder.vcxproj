@@ -147,6 +147,7 @@
     <Text Include="cipher.txt" />
     <Text Include="key_alphabet.txt" />
     <Text Include="msg_alphabet.txt" />
+    <Text Include="source.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\modular_math_lib\modular_math_lib.vcxproj">

@@ -16,6 +16,8 @@ std::string DetermineKey(
 
 int main(int argc, char** argv)
 {
+	setlocale(LC_ALL, "");
+
 	argparse::ArgumentParser prog("key_finder", "1.0");
 
 	prog.add_argument("-l", "--key-length")

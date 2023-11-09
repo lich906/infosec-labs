@@ -37,5 +37,6 @@
     <Text Include="key_alphabet.txt" />
     <Text Include="msg_alphabet.txt" />
     <Text Include="cipher.txt" />
+    <Text Include="source.txt" />
   </ItemGroup>
 </Project>
