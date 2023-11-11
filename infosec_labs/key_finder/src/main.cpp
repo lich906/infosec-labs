@@ -15,6 +15,7 @@ std::string DetermineKey(
 	const SetOfChars& keyAlph);
 
 int main(int argc, char** argv)
+try
 {
 	setlocale(LC_ALL, "");
 
@@ -50,18 +51,15 @@ int main(int argc, char** argv)
 
 	FileInputStream cipherInput(inFilePath);
 
-	try
-	{
-		std::string key = DetermineKey(cipherInput, keyLength, msgAlphabet, keyAlphabet);
-		std::cout << "Found key: " << key << std::endl;
-	}
-	catch (const std::exception& e)
-	{
-		std::cout << e.what() << std::endl;
-		return 1;
-	}
+	std::string key = DetermineKey(cipherInput, keyLength, msgAlphabet, keyAlphabet);
+	std::cout << "Found key: " << key << std::endl;
 
 	return 0;
+}
+catch (const std::exception& e)
+{
+	std::cout << e.what() << std::endl;
+	return 1;
 }
 
 SetOfChars ReadSetOfChars(FileInputStream& input)

@@ -3,6 +3,8 @@
 
 int main(int argc, char** argv)
 {
+	setlocale(LC_ALL, "");
+
 	argparse::ArgumentParser prog("key_encryption", "1.0");
 
 	prog.add_argument("-m", "--modulus")
