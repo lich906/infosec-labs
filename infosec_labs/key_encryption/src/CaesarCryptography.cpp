@@ -1,6 +1,6 @@
 #include <iostream>
-#include "modular_math_lib.h"
-#include "CaesarCryptography.h"
+#include "../../modular_math_lib/include/modular_math_lib.h"
+#include "../include/CaesarCryptography.h"
 
 constexpr size_t BufferSize = 10000;
 

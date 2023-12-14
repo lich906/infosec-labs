@@ -1,8 +1,8 @@
-#include <argparse/argparse.hpp>
+#include "../include/argparse/argparse.hpp"
 #include <set>
-#include "FileInputStream.h"
-#include "modular_math_lib.h"
-#include "set_intersection.hpp"
+#include "../include/FileInputStream.h"
+#include "../../modular_math_lib/include/modular_math_lib.h"
+#include "../include/set_intersection.hpp"
 
 using SetOfChars = std::set<uint8_t>;
 
@@ -111,7 +111,7 @@ std::string DetermineKey(
 				std::cout << el << " ";
 			}
 			std::cout << "]" << std::endl;
-			throw std::exception("Key element has no unambiguous value or any value at all.");
+			throw std::runtime_error("Key element has no unambiguous value or any value at all.");
 		}
 		else
 		{

@@ -1,5 +1,5 @@
-#include "modular_math_lib_pch.h"
-#include "modular_math_lib.h"
+#include "../include/modular_math_lib_pch.h"
+#include "../include/modular_math_lib.h"
 
 
 int modular_inv(int x, int mod);
