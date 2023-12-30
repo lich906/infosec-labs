@@ -21,6 +21,14 @@
 
 ```bash
 mkdir build && cd build
-cmake ..                  # Для сборки тестов добавить параметр -DBUILD_TESTS=on
+cmake ..         # Для сборки тестов добавить параметр -DBUILD_TESTS=on
 cmake --build .
+```
+
+### С помощью [Premake](https://github.com/premake/premake-core)
+
+```bash
+premake5 gmake2   # Пример генерации GNU Makefile
+cd build
+make
 ```
