@@ -1,5 +1,5 @@
 #include <ios>
-#include "../modular_math_lib/include/modular_math_lib.h"
+#include "modular_math_lib.h"
 
 void test(bool success);
 

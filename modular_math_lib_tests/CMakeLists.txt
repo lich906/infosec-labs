@@ -6,7 +6,7 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set(INCLUDE_DIR include)
 set(SOURCE_DIR src)
 
-set(sources main.cpp)
+set(sources main.cpp ${MODULAR_MATH_LIB_DIR}/include/modular_math_lib.h)
 
 add_executable(modular_math_lib_tests ${sources} ${includes})
 

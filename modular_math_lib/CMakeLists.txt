@@ -14,6 +14,8 @@ set(sources
 
 add_library(modular_math_lib ${sources} ${includes})
 
+target_include_directories(modular_math_lib PRIVATE ${INCLUDE_DIR})
+
 set_target_properties(modular_math_lib PROPERTIES
         CXX_STANDARD 17
         CXX_STANDARD_REQUIRED YES

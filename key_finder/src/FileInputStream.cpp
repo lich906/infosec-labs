@@ -1,4 +1,4 @@
-#include "../include/FileInputStream.h"
+#include "FileInputStream.h"
 
 FileInputStream::FileInputStream(const std::string& filePath)
 	: m_stream(filePath, std::ios::binary)

@@ -1,4 +1,4 @@
-#include "../include/FileOutputStream.h"
+#include "FileOutputStream.h"
 
 FileOutputStream::FileOutputStream(const std::string& filePath)
 	: m_stream(filePath, std::ios::binary)

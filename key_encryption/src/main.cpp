@@ -1,5 +1,5 @@
-#include "../include/argparse/argparse.hpp"
-#include "../include/CaesarCryptography.h"
+#include "argparse/argparse.hpp"
+#include "CaesarCryptography.h"
 
 int main(int argc, char** argv)
 {

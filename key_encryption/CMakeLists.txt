@@ -10,7 +10,8 @@ set(includes
         ${INCLUDE_DIR}/CaesarCryptography.h
         ${INCLUDE_DIR}/FileInputStream.h
         ${INCLUDE_DIR}/FileOutputStream.h
-        ${INCLUDE_DIR}/argparse/argparse.hpp)
+        ${INCLUDE_DIR}/argparse/argparse.hpp
+        ${MODULAR_MATH_LIB_DIR}/include/modular_math_lib.h)
 
 set(sources
         ${SOURCE_DIR}/main.cpp
@@ -21,6 +22,7 @@ set(sources
 add_executable(key_encryption ${sources} ${includes})
 
 target_include_directories(key_encryption PRIVATE ${MODULAR_MATH_LIB_DIR}/include)
+target_include_directories(key_encryption PRIVATE ${INCLUDE_DIR})
 
 target_link_libraries(key_encryption PRIVATE modular_math_lib)
 

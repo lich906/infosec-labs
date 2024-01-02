@@ -1,8 +1,8 @@
-#include "../include/argparse/argparse.hpp"
+#include "argparse/argparse.hpp"
 #include <set>
-#include "../include/FileInputStream.h"
-#include "../../modular_math_lib/include/modular_math_lib.h"
-#include "../include/set_intersection.hpp"
+#include "FileInputStream.h"
+#include "modular_math_lib.h"
+#include "set_intersection.hpp"
 
 using SetOfChars = std::set<uint8_t>;
 
